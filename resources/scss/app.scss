@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    ul {
+        list-style: none;
+        justify-content: flex-end;
+
+        li {
+            padding: 0 15px;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+
