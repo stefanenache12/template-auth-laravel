@@ -1,8 +1,10 @@
 @extends('layouts.guest')
 
+@section('page-title', 'Register')
+
 @section('main-content')
     <div class="container mt-5">
-        <form class="w-25 m-auto border p-3" method="POST" action="{{ route('register') }}">
+        <form class="w-25 m-auto border rounded shadow p-3" method="POST" action="{{ route('register') }}">
             @csrf
     
             <!-- Name -->
@@ -37,14 +39,14 @@
                 <input type="password" id="password_confirmation" name="password_confirmation" class="form-control">
             </div>
 
-            <div class="w-100 mt-3">
+            <div class="w-100 mt-4">
                 <button type="submit" class="btn btn-outline-primary w-100">
                     Register
                 </button>
             </div>
     
-            <div class="text-center mt-2">
-                <a href="{{ route('login') }}">
+            <div class="text-center mt-3 mb-3">
+                <a href="{{ route('login') }}" class="text-dark">
                     {{ __('Already registered?') }}
                 </a>
             </div>

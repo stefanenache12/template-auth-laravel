@@ -1,4 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./utility/variables.scss";
+@import "./utility/mixins.scss";
+@import "./partials/header.scss";
+@import "./partials/welcome.scss";
+@import "./partials/dashboard.scss";
+
 
 * {
     margin: 0;
@@ -6,24 +12,6 @@
     box-sizing: border-box;
 }
 
-header {
-    ul {
-        list-style: none;
-        justify-content: flex-end;
 
-        li {
-            padding: 0 15px;
-
-            a {
-                text-decoration: none;
-                color: black;
-
-                &:hover {
-                    color: blue;
-                }
-            }
-        }
-    }
-}
 
 

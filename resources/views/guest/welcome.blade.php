@@ -1,16 +1,19 @@
 @extends('layouts.guest')
 
+@section('page-title', 'Welcome')
+
 @section('main-content')
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-body">
-                        <h1 class="text-center text-primary">
+                    <div class="card-body text-center ">
+                        <h1 class="text-primary">
                             Welcome!
                         </h1>
-                        <br>
-                        La welcome page è una pagina pubblica (NON protetta)
+                        <h6>
+                            La welcome page è una pagina pubblica (NON protetta)
+                        </h6>
                     </div>
                 </div>
             </div>
